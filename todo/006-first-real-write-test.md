@@ -349,20 +349,20 @@ Do not do any of the following in this task:
 
 This task is complete when:
 
-* [ ] `npm run validate` passes before note creation.
-* [ ] Existing notes are searched before writing.
-* [ ] `50_Hypotheses/頭皮三層觸診模型.md` exists.
-* [ ] The note uses hypothesis-style frontmatter.
-* [ ] The note has `status: developing`.
-* [ ] The note has `confidence: low`.
-* [ ] The note preserves uncertainty.
-* [ ] The note separates observation from possible mechanism.
-* [ ] The note includes required backlinks.
-* [ ] The note does not claim confirmed anatomy.
-* [ ] `npm run validate` passes after note creation.
-* [ ] No `.obsidian/` files are modified.
-* [ ] No MOC files are modified unless explicitly requested.
-* [ ] Git status is reported.
+* [x] `npm run validate` passes before note creation.
+* [x] Existing notes are searched before writing.
+* [x] `50_Hypotheses/頭皮三層觸診模型.md` exists.
+* [x] The note uses hypothesis-style frontmatter.
+* [x] The note has `status: developing`.
+* [x] The note has `confidence: low`.
+* [x] The note preserves uncertainty.
+* [x] The note separates observation from possible mechanism.
+* [x] The note includes required backlinks.
+* [x] The note does not claim confirmed anatomy.
+* [x] `npm run validate` passes after note creation.
+* [x] No `.obsidian/` files are modified.
+* [x] No MOC files are modified unless explicitly requested.
+* [x] Git status is reported.
 
 ---
 
