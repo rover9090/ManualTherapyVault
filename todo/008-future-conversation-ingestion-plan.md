@@ -482,18 +482,18 @@ Do not do any of the following in this task:
 
 This task is complete when:
 
-* [ ] `_agent/future-conversation-ingestion.md` exists.
-* [ ] The document clearly says conversation ingestion is not part of MVP.
-* [ ] The document explains raw source vs proposal vs confirmed note.
-* [ ] The document proposes future folders without creating them.
-* [ ] The document includes future workflows A, B, and C.
-* [ ] The document includes proposal rules.
-* [ ] The document includes confirmation rules.
-* [ ] The document includes safety rules.
-* [ ] Optional README update is minimal if made.
-* [ ] `npm run validate` still passes.
-* [ ] No future conversation folders are created.
-* [ ] No `.obsidian/` files are modified.
+* [x] `_agent/future-conversation-ingestion.md` exists.
+* [x] The document clearly says conversation ingestion is not part of MVP.
+* [x] The document explains raw source vs proposal vs confirmed note.
+* [x] The document proposes future folders without creating them.
+* [x] The document includes future workflows A, B, and C.
+* [x] The document includes proposal rules.
+* [x] The document includes confirmation rules.
+* [x] The document includes safety rules.
+* [x] Optional README update is minimal if made.
+* [x] `npm run validate` still passes.
+* [x] No future conversation folders are created.
+* [x] No `.obsidian/` files are modified.
 
 ---
 
