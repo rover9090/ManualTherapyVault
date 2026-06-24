@@ -4,6 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "validate": "node _scripts/validate-vault.mjs"
+    "validate": "node _scripts/validate-vault.mjs",
+    "search": "node _scripts/search-notes.mjs",
+    "create-note": "node _scripts/create-note.mjs",
+    "append-note": "node _scripts/append-note-section.mjs"
   }
 }

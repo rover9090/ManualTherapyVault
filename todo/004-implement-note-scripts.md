@@ -416,18 +416,18 @@ Do not do any of the following in this task:
 
 This task is complete when:
 
-* [ ] `_scripts/search-notes.mjs` exists.
-* [ ] `_scripts/create-note.mjs` exists.
-* [ ] `_scripts/append-note-section.mjs` exists.
-* [ ] `package.json` includes `search`, `create-note`, and `append-note` scripts.
-* [ ] `npm run validate` still passes.
-* [ ] Search script can find existing Markdown content.
-* [ ] Create-note script can create a note from a template.
-* [ ] Create-note script refuses to overwrite existing files.
-* [ ] Append-note script can append a section to an existing note.
-* [ ] Append-note script refuses to modify `.obsidian/`.
-* [ ] Append-note script refuses to modify files outside the vault.
-* [ ] No `.obsidian/` files are modified.
+* [x] `_scripts/search-notes.mjs` exists.
+* [x] `_scripts/create-note.mjs` exists.
+* [x] `_scripts/append-note-section.mjs` exists.
+* [x] `package.json` includes `search`, `create-note`, and `append-note` scripts.
+* [x] `npm run validate` still passes.
+* [x] Search script can find existing Markdown content.
+* [x] Create-note script can create a note from a template.
+* [x] Create-note script refuses to overwrite existing files.
+* [x] Append-note script can append a section to an existing note.
+* [x] Append-note script refuses to modify `.obsidian/`.
+* [x] Append-note script refuses to modify files outside the vault.
+* [x] No `.obsidian/` files are modified.
 
 ---
 
