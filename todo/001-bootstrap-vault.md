@@ -320,14 +320,14 @@ Do not do any of the following in this task:
 
 This task is complete when:
 
-* [ ] All required folders exist.
-* [ ] All required MOC files exist.
-* [ ] All required `_agent/` placeholder files exist.
-* [ ] `_templates/.gitkeep` exists.
-* [ ] `_scripts/.gitkeep` exists.
-* [ ] No daily conversation ingestion folders were created.
-* [ ] No files inside `.obsidian/` were modified.
-* [ ] No existing notes were deleted or renamed.
+* [x] All required folders exist.
+* [x] All required MOC files exist.
+* [x] All required `_agent/` placeholder files exist.
+* [x] `_templates/.gitkeep` exists.
+* [x] `_scripts/.gitkeep` exists.
+* [x] No daily conversation ingestion folders were created.
+* [x] No files inside `.obsidian/` were modified.
+* [x] No existing notes were deleted or renamed.
 
 ---
 
