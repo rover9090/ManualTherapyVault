@@ -894,18 +894,18 @@ Do not do any of the following in this task:
 
 This task is complete when:
 
-* [ ] `_agent/instructions.md` is expanded into a complete role and workflow guide.
-* [ ] `_agent/safety-rules.md` clearly defines allowed and forbidden file operations.
-* [ ] `_agent/note-type-routing.md` clearly maps note types to folders and templates.
-* [ ] `_agent/write-protocol.md` defines create / append / ask behavior.
-* [ ] The protocol explicitly says not to auto-save everyday conversation.
-* [ ] The protocol explicitly says to write only on user request.
-* [ ] The protocol preserves observation / hypothesis / uncertainty distinctions.
-* [ ] The protocol prevents overwriting whole notes.
-* [ ] The protocol prevents automatic MOC updates.
-* [ ] Optional AGENTS.md / README updates are minimal if made.
-* [ ] `npm run validate` still passes.
-* [ ] No `.obsidian/` files are modified.
+* [x] `_agent/instructions.md` is expanded into a complete role and workflow guide.
+* [x] `_agent/safety-rules.md` clearly defines allowed and forbidden file operations.
+* [x] `_agent/note-type-routing.md` clearly maps note types to folders and templates.
+* [x] `_agent/write-protocol.md` defines create / append / ask behavior.
+* [x] The protocol explicitly says not to auto-save everyday conversation.
+* [x] The protocol explicitly says to write only on user request.
+* [x] The protocol preserves observation / hypothesis / uncertainty distinctions.
+* [x] The protocol prevents overwriting whole notes.
+* [x] The protocol prevents automatic MOC updates.
+* [x] Optional AGENTS.md / README updates are minimal if made.
+* [x] `npm run validate` still passes.
+* [x] No `.obsidian/` files are modified.
 
 ---
 

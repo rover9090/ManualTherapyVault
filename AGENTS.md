@@ -129,3 +129,15 @@ Use Obsidian backlinks when useful:
 [[T1-T2空間不足]]
 [[胸廓左旋位]]
 [[承重誘導]]
+```
+
+## Writing Protocol
+
+For Obsidian note writing, follow:
+
+- `_agent/instructions.md`
+- `_agent/safety-rules.md`
+- `_agent/note-type-routing.md`
+- `_agent/write-protocol.md`
+
+Do not write files unless the user explicitly asks to write into Obsidian or the vault.
