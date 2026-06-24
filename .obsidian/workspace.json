@@ -199,8 +199,13 @@
       "bases:建立新的 base": false
     }
   },
-  "active": "a7c353d41e74d860",
+  "active": "8b1d09e75802ec45",
   "lastOpenFiles": [
+    "todo/000-overview.md",
+    "README.md",
+    "gitignore",
+    "todo",
+    "AGENTS.md",
     "歡迎.md"
   ]
 }
