@@ -1,0 +1,27 @@
+{
+  "description": "Example MCP filesystem server configuration for this Obsidian vault. Replace the placeholder paths with the real absolute vault path. Scope the filesystem server only to the ManualTherapyVault folder.",
+  "windows": {
+    "mcpServers": {
+      "manual-therapy-vault": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@modelcontextprotocol/server-filesystem",
+          "C:\\Users\\Gino\\Documents\\Obsidian\\ManualTherapyVault"
+        ]
+      }
+    }
+  },
+  "mac_linux": {
+    "mcpServers": {
+      "manual-therapy-vault": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@modelcontextprotocol/server-filesystem",
+          "/Users/gino/Documents/Obsidian/ManualTherapyVault"
+        ]
+      }
+    }
+  }
+}

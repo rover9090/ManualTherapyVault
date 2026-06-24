@@ -387,18 +387,18 @@ Do not do any of the following in this task:
 
 This task is complete when:
 
-* [ ] `_agent/mcp-config-example.json` exists.
-* [ ] `_agent/mcp-config-example.json` is valid JSON.
-* [ ] `_agent/mcp-config-example.json` includes Windows and Mac/Linux examples.
-* [ ] `_agent/mcp-usage.md` exists.
-* [ ] `_agent/mcp-usage.md` explains the purpose of MCP.
-* [ ] `_agent/mcp-usage.md` warns to scope filesystem access only to the vault.
-* [ ] `_agent/mcp-usage.md` includes first connection test prompts.
-* [ ] `_agent/mcp-usage.md` includes real write command examples.
-* [ ] `_agent/mcp-usage.md` includes Git workflow.
-* [ ] Optional README update is minimal.
-* [ ] `npm run validate` still passes.
-* [ ] No `.obsidian/` files are modified.
+* [x] `_agent/mcp-config-example.json` exists.
+* [x] `_agent/mcp-config-example.json` is valid JSON.
+* [x] `_agent/mcp-config-example.json` includes Windows and Mac/Linux examples.
+* [x] `_agent/mcp-usage.md` exists.
+* [x] `_agent/mcp-usage.md` explains the purpose of MCP.
+* [x] `_agent/mcp-usage.md` warns to scope filesystem access only to the vault.
+* [x] `_agent/mcp-usage.md` includes first connection test prompts.
+* [x] `_agent/mcp-usage.md` includes real write command examples.
+* [x] `_agent/mcp-usage.md` includes Git workflow.
+* [x] Optional README update is minimal.
+* [x] `npm run validate` still passes.
+* [x] No `.obsidian/` files are modified.
 
 ---
 
