@@ -332,18 +332,18 @@ Do not do any of the following in this task:
 
 This task is complete when:
 
-* [ ] `package.json` exists.
-* [ ] `package.json` has a `validate` script.
-* [ ] `_scripts/validate-vault.mjs` exists.
-* [ ] The validation script uses only Node.js built-in modules.
-* [ ] `npm run validate` succeeds when the vault structure is correct.
-* [ ] Missing required folders are reported as errors.
-* [ ] Missing required files are reported as errors.
-* [ ] Missing template placeholders are reported as errors.
-* [ ] Missing template frontmatter is reported as an error.
-* [ ] Forbidden MVP folders are reported as warnings, not fatal errors.
-* [ ] The script does not modify any files.
-* [ ] No `.obsidian/` files are modified.
+* [x] `package.json` exists.
+* [x] `package.json` has a `validate` script.
+* [x] `_scripts/validate-vault.mjs` exists.
+* [x] The validation script uses only Node.js built-in modules.
+* [x] `npm run validate` succeeds when the vault structure is correct.
+* [x] Missing required folders are reported as errors.
+* [x] Missing required files are reported as errors.
+* [x] Missing template placeholders are reported as errors.
+* [x] Missing template frontmatter is reported as an error.
+* [x] Forbidden MVP folders are reported as warnings, not fatal errors.
+* [x] The script does not modify any files.
+* [x] No `.obsidian/` files are modified.
 
 ---
 
