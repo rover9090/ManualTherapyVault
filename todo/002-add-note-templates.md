@@ -349,20 +349,20 @@ Do not do any of the following in this task:
 
 This task is complete when:
 
-* [ ] `_templates/core-model.md` exists.
-* [ ] `_templates/technique.md` exists.
-* [ ] `_templates/body-region.md` exists.
-* [ ] `_templates/case.md` exists.
-* [ ] `_templates/hypothesis.md` exists.
-* [ ] `_templates/glossary.md` exists.
-* [ ] `_templates/reference.md` exists.
-* [ ] Every template has YAML frontmatter.
-* [ ] Every template has `{{title}}`.
-* [ ] Every template has `{{date}}` in `created` and `updated`.
-* [ ] Every template has a `## 相關筆記` section.
-* [ ] No non-template knowledge notes were created.
-* [ ] No daily conversation ingestion folders were created.
-* [ ] No `.obsidian/` files were modified.
+* [x] `_templates/core-model.md` exists.
+* [x] `_templates/technique.md` exists.
+* [x] `_templates/body-region.md` exists.
+* [x] `_templates/case.md` exists.
+* [x] `_templates/hypothesis.md` exists.
+* [x] `_templates/glossary.md` exists.
+* [x] `_templates/reference.md` exists.
+* [x] Every template has YAML frontmatter.
+* [x] Every template has `{{title}}`.
+* [x] Every template has `{{date}}` in `created` and `updated`.
+* [x] Every template has a `## 相關筆記` section.
+* [x] No non-template knowledge notes were created.
+* [x] No daily conversation ingestion folders were created.
+* [x] No `.obsidian/` files were modified.
 
 ---
 
