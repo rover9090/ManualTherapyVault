@@ -1,6 +1,7 @@
 ---
 type: body_region
 status: developing
+dg-publish: false
 created: {{date}}
 updated: {{date}}
 region: []

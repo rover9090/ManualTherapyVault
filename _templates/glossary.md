@@ -1,6 +1,7 @@
 ---
 type: glossary
 status: developing
+dg-publish: false
 created: {{date}}
 updated: {{date}}
 tags:

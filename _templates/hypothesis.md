@@ -1,6 +1,7 @@
 ---
 type: hypothesis
 status: developing
+dg-publish: false
 created: {{date}}
 updated: {{date}}
 confidence: low

@@ -52,6 +52,10 @@
   },
   "publish": {
     "default": false,
-    "field": "dg-publish"
+    "field": "dg-publish",
+    "requiresExplicitUserRequest": true,
+    "forbiddenAutoPublishTypes": [
+      "case"
+    ]
   }
 }

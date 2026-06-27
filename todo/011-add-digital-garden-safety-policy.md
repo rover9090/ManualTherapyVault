@@ -386,18 +386,18 @@ Do not do any of the following in this task:
 
 This task is complete when:
 
-* [ ] All templates include `dg-publish: false`.
-* [ ] `_templates/case.md` includes `privacy: private`.
-* [ ] `_agent/digital-garden-policy.md` exists.
-* [ ] `_agent/instructions.md` mentions Digital Garden safety.
-* [ ] `_agent/safety-rules.md` mentions publish safety.
-* [ ] `.obsidian-mcp/vault.json` publish policy requires explicit user request.
-* [ ] `.obsidian-mcp/vault.json` forbids auto-publishing case notes.
-* [ ] `validate-vault.mjs` checks Digital Garden safety metadata.
-* [ ] `npm.cmd run validate` passes.
-* [ ] No `dg-publish: true` is introduced.
-* [ ] No `.obsidian/` files are modified.
-* [ ] No publishing site files are created.
+* [x] All templates include `dg-publish: false`.
+* [x] `_templates/case.md` includes `privacy: private`.
+* [x] `_agent/digital-garden-policy.md` exists.
+* [x] `_agent/instructions.md` mentions Digital Garden safety.
+* [x] `_agent/safety-rules.md` mentions publish safety.
+* [x] `.obsidian-mcp/vault.json` publish policy requires explicit user request.
+* [x] `.obsidian-mcp/vault.json` forbids auto-publishing case notes.
+* [x] `validate-vault.mjs` checks Digital Garden safety metadata.
+* [x] `npm.cmd run validate` passes.
+* [x] No `dg-publish: true` is introduced.
+* [x] No `.obsidian/` files are modified.
+* [x] No publishing site files are created.
 
 ---
 

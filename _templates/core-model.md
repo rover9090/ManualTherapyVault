@@ -1,6 +1,7 @@
 ---
 type: core_model
 status: stable
+dg-publish: false
 created: {{date}}
 updated: {{date}}
 tags:

@@ -1,6 +1,7 @@
 ---
 type: technique
 status: developing
+dg-publish: false
 created: {{date}}
 updated: {{date}}
 related_regions: []

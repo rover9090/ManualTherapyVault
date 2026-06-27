@@ -36,6 +36,7 @@ const requiredAgentFiles = [
   "_agent/local-mcp-config-example.json",
   "_agent/local-mcp-usage.md",
   "_agent/remote-mcp-target.md",
+  "_agent/digital-garden-policy.md",
 ];
 
 const requiredRemoteMcpFiles = [
@@ -168,6 +169,18 @@ async function checkTemplates() {
         errors.push(`Template is missing required content "${requiredText}": ${file}`);
       }
     }
+
+    if (!content.includes("dg-publish: false")) {
+      errors.push(`Template is missing default private publish metadata: ${file}`);
+    }
+  }
+
+  const caseTemplate = "_templates/case.md";
+  if (await isFile(caseTemplate)) {
+    const content = await readText(caseTemplate);
+    if (!content.includes("privacy: private")) {
+      errors.push(`${caseTemplate} is missing privacy: private`);
+    }
   }
 }
 
@@ -272,7 +285,25 @@ async function checkRemoteMcpMetadata() {
   assertArray(metadata.allowedWriteFolders, `${file} allowedWriteFolders`);
   assertArray(metadata.readonlyFolders, `${file} readonlyFolders`);
   assertObject(metadata.mocPolicy, `${file} mocPolicy`);
-  assertObject(metadata.publish, `${file} publish`);
+  if (assertObject(metadata.publish, `${file} publish`)) {
+    if (metadata.publish.default !== false) {
+      errors.push(`${file} publish.default must be false`);
+    }
+
+    if (metadata.publish.field !== "dg-publish") {
+      errors.push(`${file} publish.field must be "dg-publish"`);
+    }
+
+    if (metadata.publish.requiresExplicitUserRequest !== true) {
+      errors.push(`${file} publish.requiresExplicitUserRequest must be true`);
+    }
+
+    if (!Array.isArray(metadata.publish.forbiddenAutoPublishTypes)) {
+      errors.push(`${file} publish.forbiddenAutoPublishTypes must be an array`);
+    } else if (!metadata.publish.forbiddenAutoPublishTypes.includes("case")) {
+      errors.push(`${file} publish.forbiddenAutoPublishTypes must include: case`);
+    }
+  }
 }
 
 function printList(title, items) {

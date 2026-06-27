@@ -81,6 +81,20 @@ If MCP tools are unavailable, do not pretend that files were written.
 
 Instead, output the intended patch or Markdown content and clearly state that no file was actually modified.
 
+## Publish Safety
+
+The agent must not auto-publish notes.
+
+All created notes should default to:
+
+```yaml
+dg-publish: false
+```
+
+The agent must not set `dg-publish: true` unless explicitly requested by the user.
+
+Case notes must remain private by default.
+
 ## Git Safety
 
 Do not commit unless the user explicitly requests it.

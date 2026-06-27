@@ -1,6 +1,8 @@
 ---
 type: case
 status: developing
+dg-publish: false
+privacy: private
 created: {{date}}
 updated: {{date}}
 person: ""

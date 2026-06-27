@@ -86,6 +86,20 @@ Do not claim clinical certainty.
 
 Do not remove uncertainty markers.
 
+## Digital Garden Safety
+
+All new notes should default to:
+
+```yaml
+dg-publish: false
+```
+
+Do not set `dg-publish: true` unless the user explicitly asks to publish a note.
+
+Case notes and private observations must not be auto-published.
+
+See `_agent/digital-garden-policy.md`.
+
 ## File Operation Summary
 
 Allowed by default when the user explicitly asks to write:
