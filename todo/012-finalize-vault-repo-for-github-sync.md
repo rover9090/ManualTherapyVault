@@ -388,21 +388,21 @@ Do not do any of the following in this task:
 
 This task is complete when:
 
-- [ ] `README.md` clearly states this is the vault data repo.
-- [ ] `AGENTS.md` clearly states this is not the MCP server repo.
-- [ ] `.gitignore` ignores volatile Obsidian workspace files.
-- [ ] `.obsidian-mcp/vault.json` exists and is valid JSON.
-- [ ] `.obsidian-mcp/tool-policy.md` exists.
-- [ ] `_agent/remote-mcp-target.md` exists.
-- [ ] all templates include `dg-publish: false`.
-- [ ] case template includes `privacy: private`.
-- [ ] no `dg-publish: true` appears in templates.
-- [ ] no Cloudflare Worker source files exist in this repo.
-- [ ] no future conversation ingestion folders exist.
-- [ ] `npm.cmd run validate` passes.
-- [ ] `.obsidian/` files are not modified.
-- [ ] no secrets are present.
-- [ ] git status is reported.
+- [x] `README.md` clearly states this is the vault data repo.
+- [x] `AGENTS.md` clearly states this is not the MCP server repo.
+- [x] `.gitignore` ignores volatile Obsidian workspace files.
+- [x] `.obsidian-mcp/vault.json` exists and is valid JSON.
+- [x] `.obsidian-mcp/tool-policy.md` exists.
+- [x] `_agent/remote-mcp-target.md` exists.
+- [x] all templates include `dg-publish: false`.
+- [x] case template includes `privacy: private`.
+- [x] no `dg-publish: true` appears in templates.
+- [x] no Cloudflare Worker source files exist in this repo.
+- [x] no future conversation ingestion folders exist.
+- [x] `npm.cmd run validate` passes.
+- [x] `.obsidian/` files are not modified.
+- [x] no secrets are present.
+- [x] git status is reported.
 
 ---
 
