@@ -33,7 +33,7 @@ Do not grant MCP filesystem access to:
 ## Setup Steps
 
 1. Confirm the vault absolute path.
-2. Copy the matching example from `_agent/mcp-config-example.json`.
+2. Copy the matching example from `_agent/local-mcp-config-example.json`.
 3. Replace the placeholder path with the real vault path.
 4. Add it to the chosen MCP-capable client.
 5. Restart the client if needed.

@@ -10,6 +10,30 @@ This project is not a general chat logger in the MVP.
 
 The first milestone is explicit command-based note creation and update.
 
+## Repository Role
+
+This repository is the Obsidian vault data repository.
+
+It is not the Cloudflare Worker MCP server repository.
+
+Remote MCP server source code must live in a separate repository.
+
+This vault may be accessed by:
+
+- remote MCP server through GitHub API
+- local agent through filesystem access
+- human user through Obsidian
+
+Primary external write flow:
+
+```text
+ChatGPT → remote MCP server → GitHub API → this repository
+```
+
+Do not place Cloudflare Worker source code in this vault.
+
+Do not store GitHub tokens, Cloudflare secrets, or API keys in this vault.
+
 ## Write trigger
 
 Do not write files unless the user explicitly asks to write into the vault.

@@ -694,18 +694,18 @@ Do not do any of the following in this task:
 
 This task is complete when:
 
-* [ ] `.obsidian-mcp/vault.json` exists.
-* [ ] `.obsidian-mcp/vault.json` is valid JSON.
-* [ ] `.obsidian-mcp/tool-policy.md` exists.
-* [ ] `_agent/remote-mcp-target.md` exists.
-* [ ] Existing local MCP docs are renamed to local MCP names if present.
-* [ ] `AGENTS.md` states this repo is the vault data repo, not the MCP server repo.
-* [ ] `README.md` documents the remote MCP workflow.
-* [ ] `validate-vault.mjs` checks remote MCP target metadata.
-* [ ] `npm.cmd run validate` passes.
-* [ ] No `.obsidian/` files are modified.
-* [ ] No Cloudflare Worker server files are created in this repo.
-* [ ] No secrets are added.
+* [x] `.obsidian-mcp/vault.json` exists.
+* [x] `.obsidian-mcp/vault.json` is valid JSON.
+* [x] `.obsidian-mcp/tool-policy.md` exists.
+* [x] `_agent/remote-mcp-target.md` exists.
+* [x] Existing local MCP docs are renamed to local MCP names if present.
+* [x] `AGENTS.md` states this repo is the vault data repo, not the MCP server repo.
+* [x] `README.md` documents the remote MCP workflow.
+* [x] `validate-vault.mjs` checks remote MCP target metadata.
+* [x] `npm.cmd run validate` passes.
+* [x] No `.obsidian/` files are modified.
+* [x] No Cloudflare Worker server files are created in this repo.
+* [x] No secrets are added.
 
 ---
 

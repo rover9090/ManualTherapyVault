@@ -17,6 +17,7 @@ const requiredFolders = [
   "_agent",
   "_templates",
   "_scripts",
+  ".obsidian-mcp",
   "todo",
 ];
 
@@ -32,6 +33,14 @@ const requiredAgentFiles = [
   "_agent/safety-rules.md",
   "_agent/note-type-routing.md",
   "_agent/write-protocol.md",
+  "_agent/local-mcp-config-example.json",
+  "_agent/local-mcp-usage.md",
+  "_agent/remote-mcp-target.md",
+];
+
+const requiredRemoteMcpFiles = [
+  ".obsidian-mcp/vault.json",
+  ".obsidian-mcp/tool-policy.md",
 ];
 
 const requiredTemplateFiles = [
@@ -56,6 +65,16 @@ const forbiddenMvpFolders = [
   "90_Conversation_Exports",
   "90_Raw_Conversations",
   "_proposals",
+];
+
+const requiredNoteTypes = [
+  "core_model",
+  "technique",
+  "body_region",
+  "case",
+  "hypothesis",
+  "glossary",
+  "reference",
 ];
 
 async function pathExists(relativePath) {
@@ -173,6 +192,89 @@ async function checkForbiddenFolders() {
   }
 }
 
+function hasOwn(object, key) {
+  return Object.prototype.hasOwnProperty.call(object, key);
+}
+
+function assertObject(value, label) {
+  if (!value || typeof value !== "object" || Array.isArray(value)) {
+    errors.push(`${label} must be an object`);
+    return false;
+  }
+
+  return true;
+}
+
+function assertArray(value, label) {
+  if (!Array.isArray(value)) {
+    errors.push(`${label} must be an array`);
+    return false;
+  }
+
+  return true;
+}
+
+async function checkRemoteMcpMetadata() {
+  const file = ".obsidian-mcp/vault.json";
+
+  if (!(await isFile(file))) {
+    return;
+  }
+
+  let metadata;
+  try {
+    metadata = JSON.parse(await readText(file));
+  } catch (error) {
+    errors.push(`${file} is not valid JSON: ${error.message}`);
+    return;
+  }
+
+  for (const field of [
+    "vaultId",
+    "displayName",
+    "noteTypeRoutes",
+    "allowedWriteFolders",
+    "readonlyFolders",
+    "forbiddenFolders",
+    "templates",
+    "mocPolicy",
+    "publish",
+  ]) {
+    if (!hasOwn(metadata, field)) {
+      errors.push(`${file} is missing required field: ${field}`);
+    }
+  }
+
+  if (assertObject(metadata.noteTypeRoutes, `${file} noteTypeRoutes`)) {
+    for (const type of requiredNoteTypes) {
+      if (!hasOwn(metadata.noteTypeRoutes, type)) {
+        errors.push(`${file} noteTypeRoutes is missing: ${type}`);
+      }
+    }
+  }
+
+  if (assertObject(metadata.templates, `${file} templates`)) {
+    for (const type of requiredNoteTypes) {
+      if (!hasOwn(metadata.templates, type)) {
+        errors.push(`${file} templates is missing: ${type}`);
+      }
+    }
+  }
+
+  if (assertArray(metadata.forbiddenFolders, `${file} forbiddenFolders`)) {
+    for (const folder of [".git", ".obsidian", "node_modules"]) {
+      if (!metadata.forbiddenFolders.includes(folder)) {
+        errors.push(`${file} forbiddenFolders must include: ${folder}`);
+      }
+    }
+  }
+
+  assertArray(metadata.allowedWriteFolders, `${file} allowedWriteFolders`);
+  assertArray(metadata.readonlyFolders, `${file} readonlyFolders`);
+  assertObject(metadata.mocPolicy, `${file} mocPolicy`);
+  assertObject(metadata.publish, `${file} publish`);
+}
+
 function printList(title, items) {
   console.log("");
   console.log(`${title}:`);
@@ -185,10 +287,12 @@ await assertRunningFromVaultRoot();
 await checkFolders();
 await checkFiles(requiredMocFiles, "MOC file");
 await checkFiles(requiredAgentFiles, "agent file");
+await checkFiles(requiredRemoteMcpFiles, "remote MCP file");
 await checkFiles(requiredTemplateFiles, "template file");
 await checkFiles(requiredRootFiles, "root file");
 await checkTemplates();
 await checkMocHeadings();
+await checkRemoteMcpMetadata();
 await checkForbiddenFolders();
 
 if (errors.length > 0) {

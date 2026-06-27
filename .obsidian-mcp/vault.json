@@ -1,0 +1,57 @@
+{
+  "vaultId": "manual-therapy",
+  "displayName": "Manual Therapy Vault",
+  "description": "Manual therapy model, techniques, body regions, cases, hypotheses, glossary, and references.",
+  "language": "zh-TW",
+  "defaultBranch": "main",
+  "noteTypeRoutes": {
+    "core_model": "10_Core_Model",
+    "technique": "20_Techniques",
+    "body_region": "30_Body_Regions",
+    "case": "40_Cases",
+    "hypothesis": "50_Hypotheses",
+    "glossary": "60_Glossary",
+    "reference": "80_References"
+  },
+  "allowedWriteFolders": [
+    "10_Core_Model",
+    "20_Techniques",
+    "30_Body_Regions",
+    "40_Cases",
+    "50_Hypotheses",
+    "60_Glossary",
+    "80_References"
+  ],
+  "restrictedWriteFolders": [
+    "00_MOC"
+  ],
+  "readonlyFolders": [
+    "_agent",
+    "_templates",
+    "_scripts",
+    "todo",
+    ".obsidian-mcp"
+  ],
+  "forbiddenFolders": [
+    ".git",
+    ".obsidian",
+    "node_modules"
+  ],
+  "templates": {
+    "core_model": "_templates/core-model.md",
+    "technique": "_templates/technique.md",
+    "body_region": "_templates/body-region.md",
+    "case": "_templates/case.md",
+    "hypothesis": "_templates/hypothesis.md",
+    "glossary": "_templates/glossary.md",
+    "reference": "_templates/reference.md"
+  },
+  "mocPolicy": {
+    "autoUpdate": false,
+    "updateOnlyOnExplicitRequest": true
+  },
+  "publish": {
+    "default": false,
+    "field": "dg-publish"
+  }
+}
