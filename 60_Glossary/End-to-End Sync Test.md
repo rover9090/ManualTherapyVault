@@ -23,3 +23,7 @@ ChatGPT -> remote MCP server -> GitHub API -> ManualTherapyVault -> git pull -> 
 - [[Obsidian]]
 - [[GitHub]]
 - [[ManualTherapyVault]]
+
+## Append Verification
+
+This section verifies that ChatGPT can append to an existing Obsidian note through the remote MCP server without overwriting the original content.
