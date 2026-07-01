@@ -26,10 +26,7 @@
     "00_MOC"
   ],
   "readonlyFolders": [
-    "_agent",
     "_templates",
-    "_scripts",
-    "todo",
     ".obsidian-mcp"
   ],
   "forbiddenFolders": [

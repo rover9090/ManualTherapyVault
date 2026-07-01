@@ -2,13 +2,11 @@
 
 ## Project goal
 
-This repository is an Obsidian vault for the user's manual therapy knowledge system.
+This repository is an Obsidian vault data repository for the user's manual therapy knowledge system.
 
-The goal is to support command-based AI writing into Obsidian Markdown notes through Codex, MCP, or local filesystem access.
+The remote MCP server is implemented and operated outside this repository.
 
-This project is not a general chat logger in the MVP.
-
-The first milestone is explicit command-based note creation and update.
+This repository should contain vault data, note templates, and vault metadata only.
 
 ## Repository Role
 
@@ -33,6 +31,11 @@ ChatGPT → remote MCP server → GitHub API → this repository
 Do not place Cloudflare Worker source code in this vault.
 
 Do not store GitHub tokens, Cloudflare secrets, or API keys in this vault.
+
+The portable MCP control contract for this vault is:
+
+- `.obsidian-mcp/vault.json`
+- `_templates/`
 
 ## Write trigger
 
@@ -84,8 +87,6 @@ Use these folders:
 - `60_Glossary/` for terminology notes
 - `80_References/` for external references
 - `_templates/` for note templates
-- `_agent/` for agent instructions
-- `_scripts/` for helper scripts
 
 If the user specifies the folder, follow the user's instruction.
 
@@ -157,11 +158,9 @@ Use Obsidian backlinks when useful:
 
 ## Writing Protocol
 
-For Obsidian note writing, follow:
+For Obsidian note writing, external MCP tools should primarily follow:
 
-- `_agent/instructions.md`
-- `_agent/safety-rules.md`
-- `_agent/note-type-routing.md`
-- `_agent/write-protocol.md`
+- `.obsidian-mcp/vault.json`
+- `_templates/`
 
 Do not write files unless the user explicitly asks to write into Obsidian or the vault.

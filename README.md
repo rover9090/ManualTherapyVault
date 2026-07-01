@@ -1,10 +1,17 @@
 # Manual Therapy Vault
 
-This is an Obsidian vault for the user's manual therapy knowledge system.
+This is an Obsidian vault data repository for the user's manual therapy knowledge system.
 
-The MVP goal is command-based AI writing into Obsidian Markdown notes through Codex / MCP / local filesystem access.
+The remote MCP server is implemented and operated outside this repository.
 
-Daily conversation ingestion is a later phase, not the first milestone.
+This repository should contain vault data, note templates, and vault metadata only. It should not contain MCP server source code, Cloudflare Worker code, API tokens, or secrets.
+
+The portable control contract for external MCP tools is:
+
+```text
+.obsidian-mcp/vault.json
+_templates/
+```
 
 ## Remote MCP Workflow
 
@@ -25,12 +32,6 @@ ChatGPT
 → this repository
 → local/mobile git pull
 → Obsidian
-```
-
-Local filesystem MCP usage is optional and documented in:
-
-```text
-_agent/local-mcp-usage.md
 ```
 
 ## GitHub Sync Workflow
@@ -56,7 +57,6 @@ After reviewing local changes:
 
 ```powershell
 git status --short
-npm.cmd run validate
 git add .
 git commit -m "chore: finalize GitHub-backed Obsidian vault"
 ```

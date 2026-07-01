@@ -61,7 +61,6 @@ May read Markdown files from:
 - `50_Hypotheses/`
 - `60_Glossary/`
 - `80_References/`
-- `_agent/`
 - `_templates/`
 - `.obsidian-mcp/`
 
@@ -91,10 +90,7 @@ Must not overwrite existing files.
 Must not create files in:
 
 - `00_MOC/`, unless the user explicitly requests MOC creation
-- `_agent/`
 - `_templates/`
-- `_scripts/`
-- `todo/`
 - `.obsidian-mcp/`
 - `.obsidian/`
 - `.git/`
@@ -163,7 +159,6 @@ Search may include:
 
 - note folders
 - `00_MOC/`
-- `_agent/`
 - `_templates/`
 
 The remote MCP server may use GitHub API, local cache, or an index, but GitHub remains the source of truth.
